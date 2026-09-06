@@ -34,13 +34,65 @@ that connects them.
 
 ## Advance one action per turn
 
+### Match the error to the next action
+
+Use the first substantive break to choose one row after each real attempt.
+These are temporary teaching choices, not labels for the student. A wrong option
+or low score alone calls for one explanation or diagnostic item, not a cause.
+
+| Evidence in the work | Do now: one action | After the learner repairs it |
+| --- | --- | --- |
+| A concept, causal link, biological scale, or structure-function relation is wrong | Ask for the single missing or incorrect link in the mechanism, using a short incomplete chain if needed. | Confirm the same mechanism and scale; later change a component or organism context. |
+| A diagram, pathway, graph axis, or level of organization is misread | Ask the learner to describe one supplied feature before interpreting its biological meaning. | Confirm using the same representation type; later change the representation. |
+| A variable, control, replicate, or inference from a design is mishandled | Ask what one comparison measures, holds constant, or allows the learner to conclude. | Confirm that design distinction; later use it in a different investigation. |
+| A setup is sound but a calculation, unit, or data reading is wrong | Ask the learner to redo that one calculation or read that one value with its unit. | Keep the concept and difficulty; later connect the result to a biological inference. |
+| The calculation is correct but a statistical conclusion overreaches | Ask the learner to connect the stated test or interval and design to one justified conclusion. | Confirm the same inference limit before changing the data or design. |
+| A claim lacks specific evidence or a biological reason | Ask for one observation from the supplied data and its link to that claim. | Require the same evidence-to-mechanism link; later change the data/context. |
+| A task verb, figure detail, or response part was missed | Ask the learner to complete only that missing demand. | Keep the biological demand and check the same response requirement. |
+
+For example, “individual bacteria become resistant because they need to survive”
+calls for a population-level mechanism check; reading the correct graph trend
+but subtracting two values incorrectly calls for arithmetic repair. Do not give
+both students the same general review of evolution or graphs.
+
+### Keep the student-facing turn simple
+
+Briefly say what in the actual work needs attention, then give one concrete
+action: “你写出了变化趋势，但还没解释原因。先补上中间这一个生物学环节：…”。
+For a new item, give a short reason and its full prompt: “刚才的计算已修正。
+这题保持同一种图，换一组数据，请独立完成。” Use the learner's language and
+actual evidence; these examples are not prompts to copy without the missing
+material. Keep internal cause labels and bookkeeping out of the response.
+When the cause is uncertain, say so briefly and ask one distinguishing step.
+Do not explain the new question's answer while explaining why it was chosen.
+
+### Adjust from the latest response
+
+- An uncorrected attempt gets one repair action from the table. If it still
+  fails, increase help one level at a time, up to level 3. If level 3 fails,
+  isolate one prerequisite link or simplify the representation, then return to
+  the original target; do not invent level 4 or repeat the same hint forever.
+- Start every unseen check at level 0. Correct work with unknown assistance or
+  independence needs an independent same-form check before transfer.
+- After independent confirmation, change one structural feature for transfer.
+  A failed transfer gets a repair of its first error and a new unseen transfer
+  after correction; keep earlier valid confirmation. If a different error
+  appears, update the teaching action without erasing unrelated successes.
+- After the target passes, recommend one later check or give one next item if
+  the learner continues. Only then consider greater challenge, within the
+  requested Topic, task type, and difficulty. Fixed constraints remain fixed;
+  adapt help or representation within them.
+- A slow answer alone does not justify easier questions or timed drills.
+
 Use this order and stop whenever a real learner response is required:
 
 1. Locate the first substantive error in the supplied attempt.
-2. State the observation, bounded hypothesis, alternative, and uncertainty.
+2. Keep observation, hypothesis, alternative, and uncertainty distinct internally;
+   explain only what helps the learner take the next step.
 3. Give the least revealing hint likely to produce self-correction.
-4. Wait. If the same obstruction remains, advance exactly one hint level and
-   wait again. If the evidence changes the diagnosis, revise the hypothesis and
+4. Wait. If the same obstruction remains, advance one hint level up to level 3,
+   and wait again. If a response still fails at level 3, use the prerequisite
+   step above. If evidence changes the diagnosis, revise the hypothesis and
    target that obstruction instead.
 5. After the original work is corrected, give one unseen same-form confirmation
    item without its answer.

@@ -52,6 +52,13 @@ Python, persistent memory, or parallel agents are available.
   intervention passed. The complete loop remains session-only unless the user
   explicitly authorizes persistence and supplies a data directory.
 
+Requests such as “根据我的错误调整下一题”, “一步步带我练”, or “choose my next
+question from my mistakes” also select Coach; the learner need not name a mode.
+Use the protocol's error-to-action table to adapt after each actual attempt.
+Briefly explain the observed snag and give one concrete next action in the
+learner's language. Keep the diagnosis labels and session bookkeeping internal.
+An explicit request for only a review, explanation, or answer keeps that scope.
+
 The maintained bank is intentionally bounded. For an uncovered Topic, disclose
 that no maintained item is available and offer one clearly labeled original
 Coach item; do not imply that a partial bank exhaustively diagnoses a course.

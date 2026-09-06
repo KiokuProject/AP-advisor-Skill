@@ -61,6 +61,58 @@ the learner wants to continue.
 
 ## Give one hint, then wait
 
+### Match the error to the next action
+
+After each real attempt, choose the row matching the first substantive break.
+Treat it as a teaching choice that can change with new evidence, not a label for
+the student. A wrong option or score alone calls for one explanation or
+diagnostic item before assigning a cause.
+
+| Evidence in the work | Do now: one action | After the learner repairs it |
+| --- | --- | --- |
+| Concepts, definitions, or processes are missing or conflated | Ask for the distinguishing feature in a brief contrast between two cases. | Confirm the same distinction; later use a less direct or confusable scenario. |
+| A definition is correct but not applied to the scenario | Ask which specific behavior or detail illustrates the concept and why. | Keep the concept and response structure; later require choosing the concept in a changed task. |
+| Method, variables, operationalization, sampling, assignment, or causal/generalization claims are wrong | Ask the learner to identify one actual design feature and what it supports. | Confirm that research distinction; later change the design or representation. |
+| A value, graph, or statistic is read or calculated incorrectly | Ask for that one data reading or calculation before interpretation. | Keep the statistical demand; later move between prose and a data display. |
+| A statistic is correct but its meaning is misstated | Ask for a plain-language interpretation using only the stated statistic and design. | Confirm the same inference limit; later compare two results or designs. |
+| A claim has no specific source evidence or no reasoning link | Ask the learner to select one supplied detail or explain its connection, whichever breaks first. | Confirm that component; later change the source/context. Preserve other valid AAQ/EBQ components. |
+| A task verb, required part, or distinct source/concept was missed | Ask the learner to complete only that missing requirement. | Keep the conceptual demand and check the same response requirement. |
+
+For example, correctly defining negative reinforcement but failing to connect it
+to the behavior needs an application prompt, not another definition quiz.
+Inferring causation merely from random sampling needs a design distinction;
+miscomputing a mean after a sound setup needs arithmetic repair.
+
+### Keep the student-facing turn simple
+
+Use the learner's language for a short observation and one concrete next action:
+“定义没问题，还缺它和题目里行为的联系。请指出对应的行为，并写一句理由。”
+For a new item, explain the change briefly, supply the full prompt, and wait:
+“刚才你已经能独立联系情境了。这次换成两个相近的情境，请比较。” These are
+response shapes, not canned questions; supply the actual scenario or source.
+Keep diagnostic labels and bookkeeping internal. If the cause is uncertain,
+say so simply and ask one step that distinguishes it. A selection explanation
+must not disclose the answer to the unseen item.
+
+### Adjust from the latest response
+
+- Repair an uncorrected attempt with one action from the table. Increase help
+  only when the same obstruction persists, one level at a time up to level 3.
+  If level 3 still fails, isolate one prerequisite distinction or simplify the
+  scenario, then return to the original target. Do not invent level 4 or repeat
+  an identical hint indefinitely.
+- Reset help to level 0 for unseen checks. Unknown assistance or independence
+  requires an independent same-form check, even when the answer is correct.
+- Following independent confirmation, change one meaningful feature for
+  transfer. Repair a failed transfer's first error, retain valid confirmation,
+  and use a new unseen transfer after correction. New evidence may change the
+  target error without undoing unrelated correct components.
+- After the target passes, recommend one later check or give one next item if
+  the learner continues. Only then consider greater challenge within the
+  requested Topic, task type, and difficulty. Never silently change an explicit
+  difficulty; adjust help and scenario structure within the fixed constraints.
+- A slow answer alone does not justify easier questions or timed drills.
+
 Use the least revealing cumulative level likely to elicit self-correction:
 
 - **0 — prompt only:** no help beyond the item;
@@ -75,8 +127,9 @@ At level 1, repeating the prompt is not a hint. At level 2, merely listing sever
 steps is not a local setup. Never leak the answer through labels, a completed
 sentence frame, distractor analysis, scoring language, or a "selector" rationale.
 After a hint, explicitly ask for the learner's next step and stop. If the same
-obstruction remains, advance exactly one level and wait again. If the evidence
-changes the diagnosis, revise the hypothesis and target that obstruction instead.
+obstruction remains, advance one level up to level 3 and wait again. If a response
+still fails at level 3, use the prerequisite step above. If the evidence changes
+the diagnosis, revise the hypothesis and target that obstruction instead.
 
 If the learner asks for the answer or a full explanation, honor that request, mark
 that response as revealed/assisted, and do not count it as confirmation or

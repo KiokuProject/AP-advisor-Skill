@@ -32,15 +32,73 @@ the loop.
 
 ## Advance one informative action at a time
 
+### Match the error to the next action
+
+Apply this table to all three mathematics courses after each actual attempt.
+Choose the earliest substantive break, not every downstream symptom. These are
+temporary teaching choices, not permanent labels for the student. If only a
+score or final answer is available, ask for one relevant step or give one
+diagnostic item; do not guess an error type.
+
+| Evidence in the work | Do now: one action | After the learner repairs it |
+| --- | --- | --- |
+| A definition, rule, or its condition is misapplied | Ask for the defining condition or one contrast between a case where the rule applies and one where it does not. | Confirm the same rule and condition with new values; later change the representation or context. |
+| Quantities or constraints are translated into the wrong model | Ask the learner to identify one quantity and its relation to another before calculating. | Confirm the same model structure in the same context family; later change the context. |
+| The setup is valid but algebra, arithmetic, or a sign goes wrong | Point to the first faulty line and ask the learner to redo only that operation. | Use a same-form item at the same difficulty; do not restart the whole concept lesson. |
+| A graph, table, formula, or verbal description is misread or translated incorrectly | Ask for one value, sign, interval, or relationship from the supplied representation before interpreting it. | Confirm with the same representation type; later ask for the same idea in a different representation. |
+| The result is plausible but a reason or theorem condition is missing | Ask for one missing condition or the link between one claim and its evidence. | Require that justification on a same-form item; later test choosing the condition in a new setting. |
+| A task verb, domain restriction, quantity, or unit was missed | Ask the learner to restate that requirement and revise only the affected step. | Keep the mathematical demand and include the same kind of reading requirement. |
+
+For example, in Precalculus, treating a quadratic as invertible on all real
+inputs calls for a domain/one-to-one contrast, not more algebra.
+In AB, a valid derivative setup followed by a sign slip calls for local repair;
+omitting the inner derivative calls for an outer/inner structure check. In BC,
+using a convergence test without checking its conditions calls for a condition
+check, not simply another harder series.
+
+### Make the adaptation visible without a report
+
+In the learner's language, give a short observation and one next action, for
+example: “列式没问题，错误从展开这一步开始。先只重算这一行：…”。
+When choosing a new item, briefly connect it to the attempt: “这一步已修正。
+下面换一组数，看看你能否独立完成。” Then supply the complete prompt and stop.
+These are response shapes, not fixed wording; include the actual line or prompt.
+Do not print the internal observation/hypothesis/alternative fields as a report.
+If uncertainty changes the next action, express it simply: “还看不出是算错还是
+规则用错；请先写出你用的规则。” Avoid labels that disclose an unseen answer.
+
+### Adjust support and difficulty from the latest response
+
+- While the original step is still wrong, repair it using the table; do not
+  issue a confirmation or transfer just because an incorrect attempt exists.
+- If the same snag persists, increase help by one level, up to level 3. If
+  level 3 still does not help, use one simpler prerequisite step or another
+  representation of the same idea, then return to the original target. Do not
+  invent level 4 or loop through identical hints.
+- Reset help to level 0 for each unseen check. A correct response whose help
+  or independence is unknown still needs an independent same-form check.
+- After independent confirmation, change one meaningful feature for transfer.
+  If transfer fails, repair its first error and preserve valid confirmation;
+  use a new unseen transfer after repair. A new error may change the teaching
+  action without showing that previously demonstrated skills were lost.
+- After an independent transfer passes, suggest one later check or, if the
+  learner wants to continue, give one next item. Increase challenge only then
+  and only within the requested course, Topic, task type, and difficulty.
+  Otherwise adapt the amount of help and the representation within those
+  constraints; an explicitly fixed difficulty never changes silently.
+- Time alone does not trigger easier work or a speed drill. For a supported
+  pacing concern, use the evidence requirements in `advisor.md`.
+
 Use this order, stopping whenever a real learner response is required:
 
 1. Receive the learner's work and locate the first substantive error.
-2. State the observation, bounded hypothesis, alternative cause, and current
-   uncertainty.
+2. Keep the observation, bounded hypothesis, alternative cause, and current
+   uncertainty distinct internally; explain only what helps the learner act.
 3. Give the least revealing hint likely to elicit self-correction.
 4. Wait for the learner's next step. If the same obstruction remains,
-   advance exactly one hint level and wait again. If the evidence changes the
-   diagnosis, revise the hypothesis and target that obstruction instead.
+   advance one hint level up to level 3 and wait again. If a response still
+   fails at level 3, use the prerequisite step above. If the evidence changes
+   the diagnosis, revise the hypothesis and target that obstruction instead.
 5. Once the learner corrects the original work, give one unseen same-form
    confirmation item without its answer.
 6. After an independent same-form success, give one unseen transfer item that
@@ -95,7 +153,10 @@ be used only with a validated state and an injected `as_of` time:
 
 The learner state's `course` selects the applicable bank; Calculus BC also
 inherits shared Calculus AB records. Its reason is an audit explanation, not
-learner evidence. If it returns no
+learner evidence. Check the candidate against the active target, stage, and
+fixed constraints before presenting it. The selector does not choose the local
+repair hint and cannot override the error-to-action table or skip confirmation.
+If its candidate does not fit, or it returns no
 candidate, say that no applicable maintained item is available and request the
 smallest missing evidence or offer a clearly labeled original item.
 

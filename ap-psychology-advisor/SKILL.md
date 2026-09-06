@@ -53,6 +53,13 @@ Python, persistent memory, or parallel agents are available.
   Units and is session-only; do not claim a maintained item bank or persistent
   learner profile.
 
+Requests such as “根据我的错误调整下一题”, “一步步带我练”, or “choose my next
+question from my mistakes” also select Coach; the learner need not name a mode.
+Use the protocol's error-to-action table to adapt after each actual attempt.
+Briefly explain the observed snag and give one concrete next action in the
+learner's language. Keep the diagnosis labels and session bookkeeping internal.
+An explicit request for only a review, explanation, or answer keeps that scope.
+
 Treat requested Topic, task type, difficulty, style, language, and answer visibility
 as fixed. If no exam year is given, use the current framework recorded in
 `references/ap-psychology-boundaries.json`. Treat 2024-and-earlier nine-unit work
