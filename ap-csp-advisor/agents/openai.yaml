@@ -1,0 +1,6 @@
+interface:
+  display_name: "AP CSP Adaptive Advisor"
+  short_description: "Adaptive Coach, code review, and AP CSP practice"
+  icon_small: "./assets/ap-advisor-icon.png"
+  icon_large: "./assets/ap-advisor-icon.png"
+  default_prompt: "Use $ap-csp-advisor to coach me from this AP CSP attempt, one hint at a time, with session-only state."

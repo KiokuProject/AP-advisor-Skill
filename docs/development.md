@@ -1,7 +1,8 @@
 # Development notes
 
 For installation and everyday use, start with the [README](../README.md),
-[简体中文说明](../README.zh-CN.md), or [繁體中文說明](../README.zh-TW.md).
+[日本語](../README.ja.md), [简体中文](../README.zh-CN.md),
+[繁體中文](../README.zh-TW.md), [한국어](../README.ko.md), or [Deutsch](../README.de.md).
 Commands below run from the repository root.
 
 ## Where to make changes
@@ -22,16 +23,21 @@ current teaching stage and user constraints before being shown.
 
 The student-facing response should briefly explain the observed snag and give
 one complete action or question. Internal cause hypotheses, labels, and hidden
-answers stay out of that response. All five courses support this flow:
+answers stay out of that response. All seven courses support this flow:
 
 - [Precalculus / Calculus AB / Calculus BC](../ap-calculus-advisor/references/session-protocol.md)
 - [Biology](../ap-biology-advisor/references/session-protocol.md)
 - [Psychology](../ap-psychology-advisor/references/session-protocol.md)
+- [Computer Science A](../ap-csa-advisor/references/session-protocol.md)
+- [Computer Science Principles](../ap-csp-advisor/references/session-protocol.md)
 
 Use the [adaptive Coach scenarios](../evals/adaptive-coach-cases.md) to review
 error routing and multi-turn behavior after changing these instructions.
 They are manual behavioral cases, not executed model results. Keep historical
 review records intact; a local release check doesn't create fresh model evidence.
+The [CSA/CSP scenarios](../evals/cs-adaptive-coach-cases.md) additionally cover
+Java/AP pseudocode semantics, Create assistance boundaries, and multi-turn
+confirmation/transfer. These new scenarios have no recorded model-run results.
 
 ## Course baselines
 
@@ -44,6 +50,25 @@ are maintained in the subject packages:
 - [Mathematics boundaries](../ap-calculus-advisor/references/ap-content-boundaries.json)
 - [Psychology boundaries](../ap-psychology-advisor/references/ap-psychology-boundaries.json)
 - [Biology boundaries](../ap-biology-advisor/references/ap-biology-boundaries.json)
+- [CSA boundaries](../ap-csa-advisor/references/ap-csa-boundaries.json)
+- [CSP boundaries](../ap-csp-advisor/references/ap-csp-boundaries.json)
+
+CSA uses the Fall 2025 four-unit framework (53 Topics, 12 Practice skills).
+CSP uses the Fall 2023 five-Big-Idea framework (35 Topics, 20 Practice skills)
+for 2026–27. These baselines were checked on 2026-09-08 against the
+[official course changes table](https://apcentral.collegeboard.org/courses/how-ap-develops-courses-and-exams/course-changes-overview)
+and the CED sources recorded in each package. Recheck the announced CSP 2027–28
+revision before changing that baseline. Older CSA ten-unit citations and CSP
+Explore/pre-2024 Create formats require explicit historical handling.
+
+The two CS packages keep their catalog and declared task/exclusion rules in one
+boundary JSON each. Their small, identical standard-library validators are
+bundled in both packages so either folder installs alone; keep both copies in
+sync. They check exact citations, Practice compatibility, and declared scope
+flags, not code semantics or full-task completeness. `--practice-only` deliberately
+cannot certify an exam task or content scope. New practice is generated and
+reviewed by the host; these packages do not include a maintained item bank,
+automatic mastery estimator, or persistent learner-state engine.
 
 A Topic check validates the citation and declared scope, not the reasoning,
 question quality, or an official score. Review the subject matter separately.
@@ -51,8 +76,8 @@ Recheck time-sensitive exam information against current official sources.
 
 ## Privacy and optional local state
 
-Every Coach is session-only by default and writes no local files. The Biology
-and Psychology Coaches remain session-only. For the three mathematics courses,
+Every Coach is session-only by default and writes no local files. The Biology,
+Psychology, CSA, and CSP Coaches remain session-only. For the three mathematics courses,
 local persistence requires both explicit authorization and a caller-supplied
 data directory outside this repository. The state stores a pseudonymous profile
 ID, course, attempts, evidence, hint/independence fields, and a review queue; it
@@ -91,12 +116,14 @@ Run from the repository root (`python3` may replace `python`):
 python ap-calculus-advisor/scripts/validate_topic_code.py --self-check --evidence-json
 python ap-psychology-advisor/scripts/validate_topic_code.py --self-check --evidence-json
 python ap-biology-advisor/scripts/validate_topic_code.py --self-check --evidence-json
+python ap-csa-advisor/scripts/validate_topic_code.py --self-check --evidence-json
+python ap-csp-advisor/scripts/validate_topic_code.py --self-check --evidence-json
 python scripts/run_evals.py --self-check --evidence-json
 python -m unittest discover -s tests -v
 python scripts/check_release.py --evidence-json
 ```
 
-The three validator self-checks cover each Skill's mapping and boundary package.
+The five validator self-checks cover each Skill's mapping and boundary package.
 The release gate additionally validates all Coach protocol artifacts, the
 mathematics assessment contract, misconception/item cross-references, math
 audit hashes, learner-state safety, selector determinism, behavioral review
@@ -109,6 +136,10 @@ These are local checks, including consistency checks on recorded behavioral
 reviews; they do not run a fresh Astra evaluation or measure learning gains.
 Historical review records remain historical evidence; Astra-specific behavior
 has not yet been evaluated with fresh model outputs.
+CSA/CSP unit tests include isolated package copies, rejection of legacy citations,
+invalid task/Practice combinations, explicit scope exclusions, and malformed
+boundary data. Passing them does not turn the manual Coach scenarios into
+behavioral evidence or extend the historical mathematics reviews to CS.
 
 The mathematics selector deliberately uses transparent rules rather than BKT,
 IRT, vector retrieval, or empirical mastery probabilities. Aggregate

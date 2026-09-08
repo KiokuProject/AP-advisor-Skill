@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "course": "csa",
+  "framework": "Fall 2025; confirmed for the 2026–27 school year",
+  "verified_on": "2026-09-08",
+  "group_label": "Unit",
+  "groups": {
+    "1": "Using Objects and Methods",
+    "2": "Selection and Iteration",
+    "3": "Class Creation",
+    "4": "Data Collections"
+  },
+  "topics": {
+    "1.1": "Introduction to Algorithms, Programming, and Compilers",
+    "1.2": "Variables and Data Types",
+    "1.3": "Expressions and Output",
+    "1.4": "Assignment Statements and Input",
+    "1.5": "Casting and Range of Variables",
+    "1.6": "Compound Assignment Operators",
+    "1.7": "Application Program Interface (API) and Libraries",
+    "1.8": "Documentation with Comments",
+    "1.9": "Method Signatures",
+    "1.10": "Calling Class Methods",
+    "1.11": "Math Class",
+    "1.12": "Objects: Instances of Classes",
+    "1.13": "Object Creation and Storage (Instantiation)",
+    "1.14": "Calling Instance Methods",
+    "1.15": "String Manipulation",
+    "2.1": "Algorithms with Selection and Repetition",
+    "2.2": "Boolean Expressions",
+    "2.3": "if Statements",
+    "2.4": "Nested if Statements",
+    "2.5": "Compound Boolean Expressions",
+    "2.6": "Comparing Boolean Expressions",
+    "2.7": "while Loops",
+    "2.8": "for Loops",
+    "2.9": "Implementing Selection and Iteration Algorithms",
+    "2.10": "Implementing String Algorithms",
+    "2.11": "Nested Iteration",
+    "2.12": "Informal Run-Time Analysis",
+    "3.1": "Abstraction and Program Design",
+    "3.2": "Impact of Program Design",
+    "3.3": "Anatomy of a Class",
+    "3.4": "Constructors",
+    "3.5": "Methods: How to Write Them",
+    "3.6": "Methods: Passing and Returning References of an Object",
+    "3.7": "Class Variables and Methods",
+    "3.8": "Scope and Access",
+    "3.9": "this Keyword",
+    "4.1": "Ethical and Social Issues Around Data Collection",
+    "4.2": "Introduction to Using Data Sets",
+    "4.3": "Array Creation and Access",
+    "4.4": "Array Traversals",
+    "4.5": "Implementing Array Algorithms",
+    "4.6": "Using Text Files",
+    "4.7": "Wrapper Classes",
+    "4.8": "ArrayList Methods",
+    "4.9": "ArrayList Traversals",
+    "4.10": "Implementing ArrayList Algorithms",
+    "4.11": "2D Array Creation and Access",
+    "4.12": "2D Array Traversals",
+    "4.13": "Implementing 2D Array Algorithms",
+    "4.14": "Searching Algorithms",
+    "4.15": "Sorting Algorithms",
+    "4.16": "Recursion",
+    "4.17": "Recursive Searching and Sorting"
+  },
+  "practices": {
+    "1.A": "Choose a program design",
+    "1.B": "Identify knowledge obtainable from data",
+    "2.A": "Implement an algorithm",
+    "2.B": "Implement data abstraction",
+    "2.C": "Implement procedural abstraction",
+    "3.A": "Trace execution order",
+    "3.B": "Trace data abstraction",
+    "3.C": "Trace procedural abstraction",
+    "3.D": "Explain and repair code errors",
+    "4.A": "Describe program behavior",
+    "4.B": "Describe necessary initial conditions",
+    "5.A": "Explain computing's societal effects"
+  },
+  "practice_descriptions": "Internal paraphrases; use the CED for exact skill wording. Topic titles are canonical catalog labels.",
+  "exam_tasks": {
+    "mcq": {
+      "allowed_practices": [
+        "1.A",
+        "1.B",
+        "2.A",
+        "2.B",
+        "2.C",
+        "3.A",
+        "3.B",
+        "3.C",
+        "3.D",
+        "4.A",
+        "4.B",
+        "5.A"
+      ],
+      "required_topic_prefixes": [],
+      "source": "exam"
+    },
+    "frq-methods": {
+      "allowed_practices": [
+        "2.A",
+        "2.B",
+        "2.C"
+      ],
+      "required_topic_prefixes": [
+        "1.",
+        "2.",
+        "3."
+      ],
+      "source": "exam"
+    },
+    "frq-class": {
+      "allowed_practices": [
+        "2.A",
+        "2.B",
+        "2.C"
+      ],
+      "required_topic_prefixes": [
+        "3."
+      ],
+      "source": "exam"
+    },
+    "frq-data": {
+      "allowed_practices": [
+        "2.A",
+        "2.B",
+        "2.C"
+      ],
+      "required_topic_prefixes": [
+        "4.8",
+        "4.9",
+        "4.10"
+      ],
+      "source": "exam"
+    },
+    "frq-2d": {
+      "allowed_practices": [
+        "2.A",
+        "2.B",
+        "2.C"
+      ],
+      "required_topic_prefixes": [
+        "4.11",
+        "4.12",
+        "4.13"
+      ],
+      "source": "exam"
+    }
+  },
+  "scope_flags": {
+    "other-primitive-types": {
+      "topics": [
+        "1.2"
+      ],
+      "reason": "long, short, byte, float, and char are outside the assessed Java subset.",
+      "source": "ced",
+      "locator": "CED Topic 1.2"
+    },
+    "special-double-values": {
+      "topics": [
+        "1.3"
+      ],
+      "reason": "Special double values and floating-point division by zero are excluded.",
+      "source": "ced",
+      "locator": "CED Topic 1.3"
+    },
+    "negative-remainder-operands": {
+      "topics": [
+        "1.3"
+      ],
+      "reason": "Remainder with a negative dividend or nonpositive divisor is excluded.",
+      "source": "ced",
+      "locator": "CED Topic 1.3"
+    },
+    "embedded-assignment": {
+      "topics": [
+        "1.4"
+      ],
+      "reason": "Assignment operators inside expressions are excluded.",
+      "source": "ced",
+      "locator": "CED Topic 1.4"
+    },
+    "keyboard-input-api": {
+      "topics": [
+        "1.4",
+        "4.6"
+      ],
+      "reason": "Requiring a specific keyboard-input API is excluded; reading text files is in scope.",
+      "source": "ced",
+      "locator": "CED Topics 1.4, 4.6"
+    },
+    "prefix-or-embedded-increment": {
+      "topics": [
+        "1.6"
+      ],
+      "reason": "Prefix increment/decrement and increment/decrement inside other expressions are excluded.",
+      "source": "ced",
+      "locator": "CED Topic 1.6"
+    },
+    "inheritance-implementation": {
+      "topics": [
+        "1.12",
+        "3.3"
+      ],
+      "reason": "Designing or implementing inheritance relationships is excluded; the basic superclass/subclass relationship remains course content.",
+      "source": "ced",
+      "locator": "CED Topic 1.12"
+    },
+    "override-object-methods": {
+      "topics": [
+        "1.15",
+        "2.6",
+        "3.5"
+      ],
+      "reason": "Overriding toString or equals is excluded; using the supplied methods is not.",
+      "source": "ced",
+      "locator": "CED Topics 1.15, 2.6"
+    },
+    "mixed-scanner-modes": {
+      "topics": [
+        "4.6"
+      ],
+      "reason": "Writing or analyzing nextLine mixed with other Scanner methods on the same input source is excluded.",
+      "source": "ced",
+      "locator": "CED Topic 4.6"
+    },
+    "regex-special-properties": {
+      "topics": [
+        "4.6"
+      ],
+      "reason": "Special regular-expression properties in split delimiters are excluded.",
+      "source": "ced",
+      "locator": "CED Topic 4.6"
+    },
+    "nonrectangular-arrays": {
+      "topics": [
+        "4.11",
+        "4.12",
+        "4.13"
+      ],
+      "reason": "Nonrectangular 2D arrays are excluded.",
+      "source": "ced",
+      "locator": "CED Topic 4.11"
+    },
+    "write-recursive-code": {
+      "topics": [
+        "4.16",
+        "4.17"
+      ],
+      "reason": "Writing recursive code is excluded; tracing and explaining recursion remain in scope.",
+      "source": "ced",
+      "locator": "CED Topic 4.16"
+    },
+    "other-search-algorithms": {
+      "topics": [
+        "4.14",
+        "4.17"
+      ],
+      "reason": "Search algorithms beyond linear and binary search are excluded.",
+      "source": "ced",
+      "locator": "CED Topic 4.17"
+    },
+    "other-sort-algorithms": {
+      "topics": [
+        "4.15",
+        "4.17"
+      ],
+      "reason": "Sorting algorithms beyond selection, insertion, and merge sort are excluded.",
+      "source": "ced",
+      "locator": "CED Topic 4.17"
+    }
+  },
+  "legacy_markers": [
+    "May 2025 and earlier exams use the former ten-unit framework; resolve the original year and title before mapping.",
+    "Current data collections include text-file reading; do not inherit older blanket exclusions on file input."
+  ],
+  "sources": [
+    {
+      "id": "ced",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-computer-science-a-course-and-exam-description.pdf",
+      "note": "Fall 2025; course framework pp. 14, 17–18 and individual Topic pages"
+    },
+    {
+      "id": "clarifications",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-computer-science-a-course-and-exam-description-clarification.pdf",
+      "note": "August 2025 changes and forthcoming resource-link/Progress Check wording; no replacement Topic framework"
+    },
+    {
+      "id": "exam",
+      "url": "https://apcentral.collegeboard.org/courses/ap-computer-science-a/exam",
+      "note": "Current exam task descriptions"
+    },
+    {
+      "id": "java-reference",
+      "url": "https://apcentral.collegeboard.org/media/pdf/ap-computer-science-a-java-quick-reference.pdf",
+      "note": "Recheck the reference linked by the current exam page before making API claims"
+    },
+    {
+      "id": "course-changes",
+      "url": "https://apcentral.collegeboard.org/courses/how-ap-develops-courses-and-exams/course-changes-overview",
+      "note": "2026–27 framework baseline and future changes"
+    }
+  ],
+  "validation_limit": "Checks exact Topic citations and declared Practice/task/exclusion compatibility only. It cannot infer undeclared exclusions, inspect code, grade work, certify a full task, or verify current policy."
+}

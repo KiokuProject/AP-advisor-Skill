@@ -25,6 +25,8 @@ SKILL_ROOTS = {
     "calculus": CALC_SKILL_ROOT,
     "psychology": ROOT / "ap-psychology-advisor",
     "biology": ROOT / "ap-biology-advisor",
+    "csa": ROOT / "ap-csa-advisor",
+    "csp": ROOT / "ap-csp-advisor",
 }
 COURSES = {"precalculus", "calc-ab", "calc-bc"}
 PRACTICES = {
@@ -845,7 +847,21 @@ def validate_repository_files() -> dict[str, Any]:
         "README.md",
         "README.zh-CN.md",
         "README.zh-TW.md",
+        "README.ja.md",
+        "README.ko.md",
+        "README.de.md",
+        "tests/test_cs_validator.py",
+        "evals/cs-adaptive-coach-cases.md",
     ]
+    for course in ("csa", "csp"):
+        required.extend(
+            f"ap-{course}-advisor/{path}" for path in (
+                "SKILL.md", "LICENSE", "agents/openai.yaml", "assets/ap-advisor-icon.png",
+                "references/session-protocol.md", "references/advisor.md",
+                "references/evidence-review.md", "references/assessment-tasks.md",
+                f"references/ap-{course}-boundaries.json", "scripts/validate_topic_code.py",
+            )
+        )
     missing = [path for path in required if not (ROOT / path).is_file()]
     if missing:
         raise ReleaseError(f"required release artifacts are missing: {missing}")
@@ -1263,7 +1279,7 @@ def main(argv: list[str] | None = None) -> int:
             json_receipt=True,
         )
     )
-    for label in ("psychology", "biology"):
+    for label in ("psychology", "biology", "csa", "csp"):
         checks.append(
             _command_receipt(
                 f"{label}_validator_self_check",

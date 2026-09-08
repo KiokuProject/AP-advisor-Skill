@@ -1,0 +1,6 @@
+interface:
+  display_name: "AP CSA Adaptive Advisor"
+  short_description: "Adaptive Coach, Java review, and AP CSA practice"
+  icon_small: "./assets/ap-advisor-icon.png"
+  icon_large: "./assets/ap-advisor-icon.png"
+  default_prompt: "Use $ap-csa-advisor to coach me from this AP CSA Java attempt, one hint at a time, with session-only state."

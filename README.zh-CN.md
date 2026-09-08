@@ -1,17 +1,20 @@
-[English](./README.md) | **简体中文** | [繁體中文](./README.zh-TW.md)
+[English](./README.md) | [日本語](./README.ja.md) | **简体中文** | [繁體中文](./README.zh-TW.md) | [한국어](./README.ko.md) | [Deutsch](./README.de.md)
 
 # AP Advisor Skills
 
 把题目和你的解题过程发给它。它会帮你找出哪里出了错，带你改好这一步，
 再根据你的表现安排下一题。
 
-这是三套给 Codex 用的 AP 学习技能，支持英文、简体中文和繁体中文。
+这是五套给 Codex 用的 AP 学习技能，覆盖七门课，支持英文、日语、简体中文、
+繁体中文、韩语和德语。
 
 | 安装哪个技能 | 可以学什么 |
 | --- | --- |
 | [ap-calculus-advisor](./ap-calculus-advisor/) | AP Precalculus、AP Calculus AB、AP Calculus BC |
 | [ap-psychology-advisor](./ap-psychology-advisor/) | AP 心理学 |
 | [ap-biology-advisor](./ap-biology-advisor/) | AP 生物学 |
+| [ap-csa-advisor](./ap-csa-advisor/) | AP Computer Science A (CSA) |
+| [ap-csp-advisor](./ap-csp-advisor/) | AP Computer Science Principles (CSP) |
 
 ## 先用起来
 
@@ -21,9 +24,11 @@
 $skill-installer Install the skill at path ap-calculus-advisor from iyorixy/AP-advisor-Skill as ap-calculus-advisor.
 $skill-installer Install the skill at path ap-psychology-advisor from iyorixy/AP-advisor-Skill as ap-psychology-advisor.
 $skill-installer Install the skill at path ap-biology-advisor from iyorixy/AP-advisor-Skill as ap-biology-advisor.
+$skill-installer Install the skill at path ap-csa-advisor from iyorixy/AP-advisor-Skill as ap-csa-advisor.
+$skill-installer Install the skill at path ap-csp-advisor from iyorixy/AP-advisor-Skill as ap-csp-advisor.
 ```
 
-安装的是这三个科目文件夹，不是整个仓库。装好后如果没显示，可以重启 Codex。
+安装的是这些科目文件夹，不是整个仓库。装好后如果没显示，可以重启 Codex。
 本地检查脚本需要 Python 3.10+，不需要额外安装 Python 库。
 
 然后贴上题目、必要的图表或材料，以及你已经写出的步骤，比如：
@@ -48,7 +53,7 @@ $ap-calculus-advisor 我在学 AP Calculus AB。请根据我的错误调整下�
 
 ## Coach 怎么根据错误调整
 
-五门课都支持。核心很简单：**错在哪里，就先练哪里。**
+七门课都支持。核心很简单：**错在哪里，就先练哪里。**
 它会看你的实际步骤；只有一个低分或错误选项，还不能确定原因。
 
 | 你的作答出了什么问题 | 它接下来怎么带你练 |
@@ -58,6 +63,7 @@ $ap-calculus-advisor 我在学 AP Calculus AB。请根据我的错误调整下�
 | 图表或示意图读错了 | 先读出一个关键信息，再解释它的意思。 |
 | 定义背对了，却不会用在题目里 | 先把定义和情境中的一个具体细节联系起来。 |
 | 建模、实验设计或论证缺了一环 | 只补那个关系、对照或理由。 |
+| 代码的索引、循环边界或对象状态出错 | 先追踪一步执行，或用一个输入检查错误。 |
 | 漏看条件、漏答一部分 | 先补上遗漏的要求。 |
 
 拿一道原创求导练习来说：
@@ -84,6 +90,8 @@ $ap-calculus-advisor 我在学 AP Calculus AB。检查我的求导过程，从�
 $ap-calculus-advisor 我在学 AP Calculus BC。根据这道级数收敛题的作答，决定我下一步该练什么。
 $ap-psychology-advisor 这个概念的定义我会背，但不会用。请根据我的回答，每次带我练一题。
 $ap-biology-advisor 请看我的图表解读和解释，判断是读数据出了错还是生物学机制没讲清，每次只带我做一步。
+$ap-csa-advisor 我的 Java ArrayList 循环删除元素后漏掉了相邻项。请看代码，每次给一个提示，再用新题检查。
+$ap-csp-advisor 根据我的 AP 伪代码追踪安排下一步，再带我练习用自己的代码解释过程。
 ```
 
 记得一起附上原题和你的作答。
@@ -91,11 +99,14 @@ $ap-biology-advisor 请看我的图表解读和解释，判断是读数据出了
 ## 用之前知道这几件事就够了
 
 - **练习题是原创的。** 数学已有 96 道题，覆盖 32 类错误；没覆盖的地方可以
-  另外出题。生物和心理学按需要出题。这不是完整题库，也不提供 AP Classroom 保密题。
+  另外出题。生物、心理学、CSA 和 CSP 按需要出题。这不是完整题库，也不提供 AP Classroom 保密题。
 - **答案什么时候看，由你决定。** Coach 默认先让你试；看过提示或答案后做对，
   不会算成“已经能独立完成”。
 - **默认只记住当前对话。** 数学可以保存本地学习记录，但需要你明确提出，并指定
-  仓库外的文件夹。生物和心理学只使用对话里的记录。
+  仓库外的文件夹。生物、心理学、CSA 和 CSP 只使用对话里的记录。
+- **CSA、CSP 分别按各自框架教学。** CSA 使用 Fall 2025 Java 框架；CSP 在
+  2026–27 学年使用 Fall 2023 框架。CSP 支持 Create 练习与规则允许的代码协助，
+  视频、PPR 和考场作答的独立完成要求见其测评指南。
 - **它是学习助手，也可能出错。** 技能包含适用于 GPT-6 Astra 等模型的指导。
   知识点编号检查通过，不代表讲解或评分一定正确。要按官方标准打分，
   还需要对应的原题和评分指南。
